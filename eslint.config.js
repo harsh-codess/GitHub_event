@@ -39,5 +39,16 @@ export default [
     languageOptions: {
       parser: tseslint.parser,
     },
+    ignores: [".github/extensions/**/*.mjs"],
+    rules: {
+      "@typescript-eslint/explicit-function-return-type": [
+        "error",
+        { allowExpressions: true, allowedNames: ["baseGamesQuery"] },
+      ],
+      "@typescript-eslint/consistent-type-imports": [
+        "error",
+        { prefer: "type-imports", fixStyle: "inline-type-imports" },
+      ],
+    },
   },
 ];

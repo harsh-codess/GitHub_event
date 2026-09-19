@@ -20,6 +20,12 @@ Refer to technology-specific instruction files:
 
 ## Core Principles
 
+### Comment Philosophy
+
+- Comment **why** (intent, constraints, tradeoffs), not **what** (obvious mechanics).
+- Do not add comments that simply paraphrase the code or markup immediately below.
+- Keep comments current; when behavior changes, update or remove related comments in the same edit.
+
 ### Testability
 
 - Every interactive element MUST include a `data-testid` attribute
